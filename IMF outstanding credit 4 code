@@ -1,0 +1,36 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+      "text": "IMF Outstanding Credit ",
+      "subtitle":"In SDR's",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":12,
+      "anchor": "middle",
+      "color": "black"},
+  
+  "data":{"url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/IMF%20outstanding%20credit%203.csv"},
+  
+  "height": 350,
+  "width": 360,
+
+  "mark": {
+    "type": "bar",
+    "color": "#116ec5"},
+
+"encoding": {
+     "x": {
+       "field": "Year",
+       "type": "temporal",
+       "axis": {
+         "title": null,
+         "grid": false,
+         "ticks": false,
+         "labelAngle": 45}},
+
+      "y": {
+        "field": "In billions",
+        "type": "quantitative",
+        "title": "",
+        "axis": {"grid": false}}
+}
+}

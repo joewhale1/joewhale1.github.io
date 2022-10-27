@@ -1,0 +1,162 @@
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Set the background color for my page: */
+body{
+    background-color: rgb(242, 242, 242);
+
+
+
+}
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 1000px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #092ea8;
+    text-align: center;
+    padding: 20px 0px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    width: 333.3333px;
+  }
+  
+  .topnav a:hover {
+    background-color: white;
+    color: rgb(35, 11, 175);
+  }
+  
+  .topnav a.active {
+    background-color: #092ea8;
+    color: white;
+  }
+
+.container{
+    background-color: transparent;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif
+} 
+
+p{
+    color:black;
+    font-family: 'Times New Roman', Times, serif
+} 
+
+h2{
+    color: black;
+    font-family: 'Times New Roman', Times, serif
+}
+
+h1{
+    color: black;
+    font-family: 'Times New Roman', Times, serif
+    
+}  
+
+.title{
+    background-color: transparent;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}    
+    
+.homework{
+    background-color: transparent;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}     
+
+.chart{
+    background-color: white;
+    width:450px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #bd3f37;
+    margin: 20px 275px 20px 275px;
+}
+
+.chart2{
+    background-color: white;
+    width:450px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #092ea8;
+    margin: 10px;
+}
+
+.chart3{
+    background-color: white;
+    width:450px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #FFB347;
+    margin: 10px;
+}
+
+.chart4{
+    background-color: white;
+    width:550px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #11d5f4;
+    margin: 20px 225px 20px 225px;
+}
+
+.chartcontainer{
+    text-align: center;
+    align-items: flex-start;
+    display: inline-block;
+    width: 1000px;
+    margin: 20px 0px 20px 0px;
+}
+
+
+        
+
+        
+
+
+
+
+
+
+
+
+    </div> 
+</body>
+
+
+<script>
+    //Define charts:
+    var myChart1 = "chart1_covidUKRegions.json";
+    var myChart2 = "chart2_ukProductivity.json";
+    var myChart3 = "chart3_football.json"
+    var myChart4 = "chart4_fiscal.json"
+    var myChart5 = "chart5_imf_loans.json"
+    var myChart6 = "chart6_imf_cleaned.json"
+    var myChart7 = "chart7_daily_yileds.json"
+    var myChart8 = "chart8_daily_yieldsnew.json"
+
+
+
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart3);
+    vegaEmbed('#Chart2', myChart4);
+    vegaEmbed('#Chart3', myChart5);
+    vegaEmbed('#Chart4', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+</script>
+
+</html>

@@ -1,0 +1,36 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+      "text": "IMF Outstanding Credit ",
+      "subtitle":"As a percentage of GDP",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":12,
+      "anchor": "middle",
+      "color": "black"},
+  
+  "data":{"url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/IMF%20outstanding%20credit%203%20full%20update.csv"},
+  
+  "height": 500,
+  "width": 385,
+
+  "mark": {
+    "type": "bar",
+    "color": "#116ec5"},
+
+"encoding": {
+     "x": {
+       "field": "Year",
+       "type": "temporal",
+       "axis": {
+         "title": null,
+         "grid": false,
+         "ticks": false,
+         "labelAngle": 45}},
+
+      "y": {
+        "field": "As percent of GDP",
+        "type": "quantitative",
+        "title": "",
+        "axis": {"grid": false}}
+}
+}

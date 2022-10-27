@@ -1,0 +1,128 @@
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title></title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="portfolio5.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a onclick="window.location.href = 'index2.html'" >Home</a>
+        <a onclick="window.location.href = 'portfolio4.html'" class="active">Portfolio</a>
+        <a onclick="window.location.href = 'Project.html' ">Project</a>"
+    
+         </div>    
+
+
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="myWeek1">
+        <h1>My data science portfolio.</h1>
+        </div>
+
+        <hr>
+    
+        <div class="title"> 
+        <h2> Week 1 Tasks 
+
+        
+        <h1></h1>
+        <p>My first chart examines the impact of playing at home on premier league scoring.</p>
+        <div class="chart" id="Chart1"></div>
+
+
+    
+        <h1></h1>
+        <p>My second chart looks at Government spending in the UK</p>
+        <div class="chart" id="Chart2"> </div>
+       
+ 
+ 
+ 
+        <div class="myWeek2">
+        
+
+            <hr>
+        
+        <div class="title">
+        
+        <h1>Week 2 Tasks</h1>
+
+         
+        <p>My Third chart shows IMF outstanding credit since 1984</p>
+        <div class="chart" id="Chart3"> </div>
+
+        <h1></h1>
+        <p>My fourth chart look at IMF outstanding credit as a percentage of the years GDP</p>
+        <div class="chart" id="Chart4"> </div>
+
+
+        <div class="myWeek3">
+        
+
+            <hr>
+        
+        <div class="title">
+        
+        <h1>Week 3 Tasks</h1>
+
+         
+        <p>My fifth chart shows yields and maturity dates</p>
+        <div class="chart" id="Chart7"> </div>
+
+        <p>My sixth chart shows the same data, with a different visual encoding</p>
+ <div class="chart" id="Chart8"></div>
+     
+
+        
+
+        
+
+
+
+
+
+
+
+
+    </div> 
+</body>
+
+
+<script>
+    //Define charts:
+    var myChart1 = "chart1_covidUKRegions.json";
+    var myChart2 = "chart2_ukProductivity.json";
+    var myChart3 = "chart3_football.json"
+    var myChart4 = "chart4_fiscal.json"
+    var myChart5 = "chart5_imf_loans.json"
+    var myChart6 = "chart6_imf_cleaned.json"
+    var myChart7 = "chart7_daily_yileds.json"
+    var myChart8 = "chart8_daily_yieldsnew.json"
+
+
+
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart3);
+    vegaEmbed('#Chart2', myChart4);
+    vegaEmbed('#Chart3', myChart5);
+    vegaEmbed('#Chart4', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+</script>
+
+</html>

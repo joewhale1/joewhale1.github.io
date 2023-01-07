@@ -1,0 +1,57 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "USA Unemployment and race 2020",
+      "subtitle": ["US census "],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "navy"
+    },
+    "config": {"background": "white", "view": {"stroke": "transparent"}},
+    "data": {
+      "url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/2020%20income%20and%20race%204.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": {"type": "circle", "color": "blue", "opacity": 0.7},
+    "height": 370,
+    "width": 280,
+    "encoding": {
+      "x": {
+        "field": "White",
+        "type": "quantitative",
+        "scale": {"domain": [10, 100]},
+        "axis": {"grid": false},
+        "title": "White (%)"
+      },
+      "y": {
+        "field": "Unemployment Rate ",
+        "type": "quantitative",
+        "scale": {"domain": [0, 17]},
+        "axis": {"grid": false},
+        "title": "Unemployment Rate"
+      },
+      "size": {
+        "field": "Population",
+        "type": "quantitative",
+        "title": "Population",
+        "scale": {"range": [3, 800]}
+      },
+      "tooltip": [
+        {"field": "State", "type": "ordinal", "title": "State"},
+        
+      
+        {
+          "field": "Unemployment Rate ",
+          "type": "quantitative",
+          "title": "Unemployment rate",
+          "format": ".0f"
+        },
+        {
+       "field": "Population",
+        "type": "quantitative",
+        "title": "Population"
+        }
+      ]
+    }
+  }

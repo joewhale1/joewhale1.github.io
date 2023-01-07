@@ -1,0 +1,52 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "2000 income",
+
+    "title":{
+      "text":"Average Income by state (2000)",
+      "subtitle":"Adjusted for inflation ($)",
+      "subtitleFontSize": 10,
+      "subtitleFontStyle": "italic",
+      "anchor": "start"
+
+    },
+    
+    "width": 400,
+    "height": 400,
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/USAstates.json",
+      "format":{ 
+      "property": "features"}},
+      
+      "projection": {"type": "mercator"},
+
+      "transform": [
+        {
+          "lookup": "properties.NAME",
+          "from":{
+            "data":{
+              "url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/US%20state%20income%202000.csv"},
+              "key": "State",
+              "fields": ["Value"]
+            }
+          }
+        
+        
+      ],
+
+      "mark":{"type": "geoshape",
+      "stroke": "darkgrey",
+      "strokeWidth": 0.5
+      
+      
+      },
+  
+  "encoding": {
+    "tooltip":[{"field":"properties.NAME", "type": "nominal", "title":"State"},
+    {"field":"Value", "title":"Value"}],
+
+
+    "color":{"field":"Value", "type": "quantitative", "title":"Average Income" }
+  }
+  }

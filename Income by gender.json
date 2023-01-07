@@ -1,0 +1,55 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   
+  
+    "description": "",
+  
+     "title": {
+      "text": "Real weekly wages in the United States ",
+      "subtitle":"Source: FRED",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "#000000",
+      "subtitleColor":"#c55c15"},
+   
+   
+    
+    "data": {
+      "url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/Wage%20by%20sex.csv",
+      "format": {"property": "observations"}
+      },
+    
+  
+    "height": 300,
+    "width": 280,
+    
+  
+   "mark": {
+      "type": "line",
+      "point": false,
+      "interpolate": "linear",
+      "color":"#871f91"
+    },
+  
+  
+    "encoding": {
+      "x": {
+        "field": "Date ",
+        "type": "temporal",
+      
+          "title": "Date"  
+        },
+  
+      "y": {
+        "field": "Wage",
+         "type": "quantitative",
+          "title": "value",
+          "axis": {"grid": false},
+        "scale": {"domain": [200, 500]}
+        },
+        "color": {"field": "Sex"}
+  
+    
+    }
+    }

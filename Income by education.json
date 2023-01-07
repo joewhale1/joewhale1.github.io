@@ -1,0 +1,16 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height":300,
+    "description": "Stock prices of 5 Tech Companies over Time.",
+    "data": {"url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/Income%20by%20education%202.csv"},
+    "mark": {
+      "type": "line",
+      "point": true
+    },
+    "encoding": {
+      "x": {"field": "Date ", "type": "temporal"},
+      "y": { "field": "Wage", "type": "quantitative"},
+      "color": {"field": "Education", "type": "nominal"}
+    }
+  }

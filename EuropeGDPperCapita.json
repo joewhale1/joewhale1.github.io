@@ -1,5 +1,4 @@
 {
-    {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Europe",
 
@@ -51,4 +50,3 @@
     "color":{"field":"GDPperCapita", "type": "quantitative", "title":"GDP per Capita" }
   }
   }
-        

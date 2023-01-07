@@ -1,0 +1,16 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   
+    "description": "Google's stock price over time.",
+    "data": {"url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/Tesla%204%20.csv"},
+   
+   
+    "title": "Tesla's Asset Value (Billions) and Stock Price",
+    
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Year ", "type": "temporal"},
+      "y": {"field": "Value", "type": "quantitative"},
+      "color": {"field": "Indicator", "type": "nominal"}
+    }
+  }

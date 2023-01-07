@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,8 +29,8 @@
       <h1>Project</h1>
     </div>
 
-    <div class="ByState">
-        <h3>Income by state</h3>
+    <div class="Income">
+        <h3>Income demographics over time</h3>
        
         <p>The following chart show data on how real income has changed by state from 1990-2020.</p>
         <div class="chart-w7" id="Chart1"></div>
@@ -38,6 +38,15 @@
          <div class="chart-w7" id="Chart3"></div>
          <div class="chart-w7" id="Chart4"></div>
     </div>
+    <div class="ByState">
+        <h3>Unemployment</h3>
+       
+        <p>The following charts shows unemployment and race</p>
+        <div class="chart-w7" id="Chart5"></div>
+        <div class="chart-w7" id="Chart6"></div>
+
+    </div>
+
       
               
         
@@ -54,6 +63,10 @@
         var myChart2 = "income by race.json";
         var myChart3 = "Income by gender.json";
         var myChart4 = "Income by education.json";
+        var myChart5 ='2010 US unemployment and Race.json';
+        var myChart6 ='2020 Unemployment and Race.json';
+
+
 
         
 
@@ -67,6 +80,10 @@
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
     vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    
+    
     
     
     

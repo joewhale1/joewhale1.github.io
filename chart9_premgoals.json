@@ -1,0 +1,19 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple bar chart with embedded data.",
+    "data": {
+      "values": [
+        {"Player Name": "Shearer", "Goals": 260}, {"Player Name": "Rooney", "Goals": 208}, {"Player Name": "Kane", "Goals": 193},
+        {"Player Name": "Cole", "Goals": 187}, {"Player Name": "Aguero", "Goals": 184}, {"Player Name": "Lampard", "Goals": 177},
+        {"Player Name": "Henry", "Goals": 175}, {"Player Name": "Fowler", "Goals": 163}, {"Player Name": "Defoe", "Goals": 162}
+      ]
+    },
+    "mark": "bar",
+    "width": 375, 
+    "height": 600,
+    "encoding": {
+      "x": {"field": "Player Name", "type": "nominal", "axis": {"labelAngle": 0}},
+      "y": {"field": "Goals", "type": "quantitative"}
+    }
+  }
+  

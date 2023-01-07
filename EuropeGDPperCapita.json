@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Europe",
+
+    "title":{
+      "text":"GDP per Capita in Europe",
+      "subtitle":"Nominal(USD)",
+      "subtitleFontSize": 10,
+      "subtitleFontStyle": "italic",
+      "anchor": "start"
+
+    },
+    
+    "width": 400,
+    "height": 400,
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/Europemap.json",
+      "format":{ 
+      "property": "features"}},
+      
+      "projection": {"type": "mercator"},
+
+      "transform": [
+        {
+          "lookup": "properties.NAME",
+          "from":{
+            "data":{
+              "url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/GDp%3ACapita%20dollars3.csv"},
+              "key": "Country",
+              "fields": ["GDPperCapita"]
+            }
+          }
+        
+        

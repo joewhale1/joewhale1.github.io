@@ -1,17 +1,15 @@
-
-
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title":{
     "text":"US",
-    "subtitle":"A base map of US with added tooltip for states" ,
+    "subtitle":"A base map of Europe with added tooltip for countries" ,
     "anchor": "start",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10
 
     
   },
-  "width": 800,
+  "width": 350,
   "height": 500,
 
   "data":{

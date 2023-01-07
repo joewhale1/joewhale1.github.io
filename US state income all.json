@@ -1,0 +1,66 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width": 500,
+    "height": 300,
+    "view": {"stroke": "transparent"},
+  
+    "title": {
+        "text": "Income  in the USA",
+        "fontSize": 12,
+        "subtitle":["Median real income ($) ", ""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10, "anchor": "middle"},
+    
+    "data": {
+      "url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/USAstates.json",
+      "format": {"property": "features"}
+    },
+  
+    "projection": {"type": "albersUsa"},
+    "mark": "geoshape", 
+  
+    "params": [
+      {"name": "Select",
+        "value": "2020",
+        "bind": {
+          "input": "select",
+          "options": [
+            "2020",
+            "2010",
+            "2000",
+            "1990"
+            ]}}],
+  
+    "transform": [
+              
+        {"lookup": "properties.NAME",
+            "from": {
+                "data": {"url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/US%20state%20income%20final%202.csv"},
+                "key": "State",
+                "fields": [       
+                    "2020",
+                    "2010",
+                    "2000",
+                    "1990"
+                
+                    ]}},
+
+          {"calculate": "datum[Select]","as": "varSelected"}],
+ 
+    "encoding":{
+      
+        "color":{
+            "field":"varSelected",
+            "legend":{
+                "title":null,
+                "orient": "right",
+                "direction": "vertical"},
+            "type": "quantitative",
+            "scale":{"scheme":"lightgreyred"}},
+      
+        "tooltip":[
+            {"field":"properties.NAME", "title": "State"},
+            {"field":"varSelected", "title": "Income", "format": ",d"}]
+    }
+  }

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Set the background color for my page: */
+body{
+    background-color: rgb(215, 215, 222);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ 
+}
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1, h3, p{
+    color:rgb(17, 17, 17);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+    
+.portfolio{
+    margin: auto; 
+    max-width: 850px;
+    background-color:rgba(255, 241, 224,0.9);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+
+    
+    
+}
+.week1{
+    margin: auto; 
+    max-width: 850px;
+    background-color:rgba(255, 241, 224,0.9);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+    
+}
+
+
+.week2{
+    margin: auto; 
+    max-width: 850px;
+    background-color:rgba(255, 241, 224,0.9);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+}
+
+.week3{
+    margin: auto; 
+    max-width: 850px;
+    background-color:rgba(255, 241, 224,0.9);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+}
+
+.week4{
+    margin: auto;
+    max-width: 850px;
+    background-color:rgba(255, 241, 224,0.9);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+    
+}
+
+.week5{
+    margin: auto;
+    max-width: 850px;
+    background-color:rgba(255, 241, 224,0.9);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+}
+
+.week7{
+    margin: auto;
+    max-width: 850px;
+    background-color:rgba(255, 241, 224,0.9);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+}
+
+.week8{
+    margin: auto;
+    max-width: 850px;
+    background-color:rgba(255, 241, 224,0.9);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+}
+/* Set the apperance of the class, chart */
+.chart{
+    background-color: white;
+    width:485px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+   
+   
+   
+}
+
+.chart1{
+    background-color: white;
+    width:485px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:auto;
+ 
+}
+.chart2{
+    background-color: white;
+    width:575px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:auto;
+ 
+
+}
+
+.chart3{
+    background-color: white;
+    width: 300px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:auto;
+    
+}
+
+.chart-w7{
+    background-color: white;
+    width: 620px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+}
+
+.chart-w8{
+    background-color: white;
+    width: 275px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+}

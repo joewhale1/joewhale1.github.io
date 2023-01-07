@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Project</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="project.10.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+
+<body>
+    <!-- First create a div for week 2 -->
+    <div style="text-align:center">
+    <div class ="project">
+      <h1>Project</h1>
+    </div>
+
+    <div class="ByState">
+        <h3>Income by state</h3>
+       
+        <p>The following chart show data on how real income has changed by state from 1990-2020.</p>
+        <div class="chart-w7" id="Chart1"></div>
+        <div class="chart-w7" id="Chart2"></div>
+         <div class="chart-w7" id="Chart3"></div>
+         <div class="chart-w7" id="Chart4"></div>
+    </div>
+      
+              
+        
+
+
+
+        
+    
+    
+    
+<script>
+        //Define charts:
+        var myChart1 = "US state income all.json";
+        var myChart2 = "income by race.json";
+        var myChart3 = "Income by gender.json";
+        var myChart4 = "Income by education.json";
+
+        
+
+    
+        
+        
+        // Embed charts:
+        
+        // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    
+    
+    
+    
+    
+</script>
+
+</html>
+    
+    

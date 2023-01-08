@@ -3,6 +3,15 @@
     "width": 450,
     "height":300,
     
+    "title":{
+      "text":"Income by Race",
+      "subtitle":"Real(USD)",
+      "subtitleFontSize": 10,
+      "subtitleFontStyle": "italic",
+      "anchor": "start"
+    },
+    
+   
     "description": "Stock prices of 5 Tech Companies over Time.",
     "data": {"url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/Income%20by%20race%202.csv"},
     "mark": {

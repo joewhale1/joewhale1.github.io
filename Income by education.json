@@ -19,7 +19,7 @@
     },
     "encoding": {
       "x": {"field": "Date ", "type": "temporal"},
-      "y": { "field": "Wage", "type": "quantitative", "title":"Mean income/week"},
+      "y": { "field": "Wage", "type": "quantitative", "title":"Mean income/month"},
       "color": {"field": "Education", "type": "nominal"}
     }
   }

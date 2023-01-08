@@ -44,7 +44,7 @@
       "y": {
         "field": "Wage",
          "type": "quantitative",
-          "title": "value",
+          "title": "Mean income/week",
           "axis": {"grid": false},
         "scale": {"domain": [200, 500]}
         },

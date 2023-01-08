@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 500,
+    "width": 450,
     "height":300,
     "description": "Stock prices of 5 Tech Companies over Time.",
     "data": {"url": "https://raw.githubusercontent.com/joewhale1/joewhale1.github.io/main/Income%20by%20education%202.csv"},
